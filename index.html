@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANTOR-Waluty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/body.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+
+</head>
+
+
+<body class="body">
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">
+                Kalkulator Walut
+            </legend>
+            <p class="form__paragraph">
+                <label>
+                    <span class="form__labelText">
+                        Kwota w PLN*:
+                    </span>
+                    <input class="form__field js-amount" required name="Kwota" type="number" min="1" step="0.01">
+                </label>
+            </p>
+            <p class="form__paragraph">
+                <label>
+                    <span class="form__labelText">
+                        Waluta:
+                    </span>
+                    <select class="form__field js-currency" name="Waluta">
+                        <option value="EUR">Euro</option>
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </label>
+            </p>
+            <p class="form__paragraph"> * - Pole wymagane </p>
+
+        </fieldset>
+
+        <p>Kurs z dnia 18.12.2023</p>
+        <p><button type="submit"> Przelicz na PLN </button></p>
+        <p class="form__result">WYNIK :<span class="js-result">N/A</span></p>
+    </form>
+
+
+
+
+</body>
